@@ -1,3 +1,19 @@
+***** Spotkanie 002 - HASH TABLE  *****
+Tablica haszująca (HashTable) jest strukturą danych, która umożliwia szybkie wyszukiwanie, wstawianie i usuwanie elementów na podstawie kluczy. W Pythonie, ta struktura jest bardzo podobna do wbudowanego słownika (**`dict`**), ale celem tego zadania jest stworzenie własnej implementacji tablicy haszującej.
+
+**Podstawowe metody tablicy haszującej (które należy zaimplementować w ramach rozwiązania):**
+
+- **Dodaj element:** Wstawia parę klucz-wartość do tablicy. Jeśli klucz już istnieje, aktualizuje jego wartość.
+- **Usuń element:** Usuwa parę klucz-wartość na podstawie podanego klucza.
+- **Pobierz wartość:** Zwraca wartość skojarzoną z podanym kluczem. Jeśli klucz nie istnieje, zwraca **`None`** lub inny określony komunikat.
+- **Czy zawiera klucz?** Sprawdza, czy dany klucz istnieje w tablicy haszującej.
+- **Ile elementów jest w tablicy:** Zwraca liczbę elementów przechowywanych w tablicy haszującej.
+
+**Twoim zadaniem jest stworzyć samemu implementację tablicy haszującej.**
+
+W Twojej implementacji powinieneś użyć prostej metody haszującej (hash - w kolejnym akapicie znajdziesz przykłady), np. reszty z dzielenia (**`mod`**) haszu klucza (hash) przez rozmiar tablicy, aby określić, gdzie umieścić parę klucz-wartość. Do obsługi kolizji (sytuacji, gdy dwa klucze mają ten sam hasz), możesz użyć jednej z dwóch metod: łańcuchowej (przechowywanie listy elementów w każdej komórce tablicy) lub otwartego adresowania (znalezienie innego miejsca w tablicy, jeśli miejsce jest już zajęte).
+
+
 ***** Spotkanie 001 - KOLEJKA PRIORYTETOWA *****
 
 Klasyczna kolejka (Queue), emuluje działanie “tradycyjnej” kolejki jaką spotkasz np. w sklepie czy kinie. Ustawiasz się na końcu i przesuwasz do przodu aż ktoś Cię obsłuży.
